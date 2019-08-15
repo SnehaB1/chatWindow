@@ -27,6 +27,7 @@ class Dashboard extends React.Component {
     })
   }
 
+  
   componentDidMount() {
     this.updateState();
   }
@@ -70,6 +71,7 @@ class Dashboard extends React.Component {
                 activeChat && Object.keys(activeChat).map((index) =>
                   <div onClick={() => this.setState({ active: activeChat[index].id })} key={activeChat[index].id}>
                     <LeftPanel chat={activeChat[index]} key={activeChat[index].id} active={active} />
+
                   </div>
                 )
 
@@ -81,6 +83,7 @@ class Dashboard extends React.Component {
         <Col span={18}>
           <div>
             <RightPanel data={activeChat[active]} onSend={this.updateState} />
+            
           </div>
         </Col>
       </Row>
