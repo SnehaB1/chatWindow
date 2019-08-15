@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import { connect } from "react-redux";
+import { storeData } from './actions/api';
 import './App.css';
+import Dashboard from "./containers/dashboard";
+import { chatData } from "./data";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  UNSAFE_componentWillMount() {
+    const { storeData } = this.props;
+
+    storeData(chatData)
+  }
+
+  render() {
+    return (
+      <Dashboard />
+    );
+  }
+
 }
 
-export default App;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    storeData: (data) => dispatch(storeData(data))
+  }
+}
+
+export default connect(null, mapDispatchToProps)(App);

@@ -1,0 +1,192 @@
+.leftpanel-container {
+    background-color: #f6f6f6;
+    height: 100vh;
+    /* margin-top: 10vh; */
+    overflow: scroll;
+}
+
+.leftpanel-outer {
+    margin-top: 10vh;
+}
+
+.leftpanel-section {
+    padding: 16px;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.leftpanel-image {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.leftpanel-name, .leftpanel-time {
+    color: #000;
+    font-weight: 500;
+}
+
+.leftpanel-time {
+    text-transform: uppercase;
+    font-size: 12px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.leftpanel-search-container {
+    padding: 16px 10px;
+    border-bottom: 1px solid #EDEDED;
+    position: fixed;
+    background-color: #f6f6f6;
+    width: 25%;
+    z-index: 1;
+}
+
+.leftpanel-search .ant-input {
+    background-color: #E9E9EA !important;
+    border: none !important;
+}
+
+.leftpanel-message {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.rightpanel-header {
+    background-color: #F8FCFF;
+    padding: 16px 8px;
+    width: 100%;
+    margin-top: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.rightpanel-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.rightpanel-header-name {
+    font-weight: 12px;
+    font-weight: bold;
+}
+
+.rightpanel-input {
+    position: fixed !important;
+    bottom: 32px !important;
+    width: 70% !important;
+}
+
+.rightpanel-input .ant-input {
+    border-radius: 20px !important;
+    padding: 20px;
+    padding-left: 40px !important;
+    padding-right: 45px !important;
+}
+
+.rightpanel-text-icon {
+    color: #A6A6A9 !important;
+    font-size: 20px;
+    /* margin: 19px 0px; */
+    padding: 19px 0px !important;
+}
+
+.rightpanel-text-send {
+    color: #4A90E2 !important;
+    font-size: 24px !important;
+}
+
+.rightpanel-message {
+    margin: 0px 20px;
+    overflow: scroll;
+    padding-top: 10vh;
+    height: 80vh;
+}
+
+.rightpanel-image-me {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-left: 30px;
+}
+
+/* CSS talk bubble */
+
+.talk-bubble {
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #EED3ED;
+    top: -10px;
+}
+
+.talk-bubble-me {
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #CDDEF3;
+    top: -10px;
+}
+
+.tri-right.border.left-top:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -40px;
+    right: auto;
+    top: -8px;
+    bottom: auto;
+    border: 32px solid;
+    border-color: #666 transparent transparent transparent;
+}
+
+.tri-right.left-top:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -20px;
+    right: auto;
+    top: 0px;
+    bottom: auto;
+    border: 22px solid;
+    border-color: #EED3ED transparent transparent transparent;
+}
+
+.tri-right.border.btm-right:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: -8px;
+    bottom: -40px;
+    border: 20px solid;
+    border-color: #666 #666 transparent transparent;
+}
+
+.tri-right.btm-right:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: 0px;
+    bottom: -20px;
+    border: 12px solid;
+    border-color: #CDDEF3 #CDDEF3 transparent transparent;
+}
