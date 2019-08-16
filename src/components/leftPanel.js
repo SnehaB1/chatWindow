@@ -6,7 +6,6 @@ class LeftPanel extends React.Component {
     const { chat, active } = this.props;
     const { name, time, messages, image, id } = chat;
 
-
     return (
       <div className="leftpanel-section" style={active === id ? { backgroundColor: "#AEACAC" } : null}>
         <Row align="middle">
@@ -16,12 +15,12 @@ class LeftPanel extends React.Component {
 
           <Col sm={24} md={16} lg={20}>
             <Row type={"flex"} justify="space-between">
-              <Col xs={0} md={16} lg={20}>
+              <Col xs={0} md={16} lg={18}>
                 <div className="leftpanel-name">
                   {name}
                 </div>
               </Col>
-              <Col xs={0} sm={0} md={0} lg={4}>
+              <Col xs={0} sm={0} md={0} lg={6}>
                 <div className="leftpanel-time">
                   {time}
                 </div>
