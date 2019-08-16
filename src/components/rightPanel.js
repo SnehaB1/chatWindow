@@ -10,12 +10,25 @@ class RightPanel extends React.Component {
     }
   }
 
+  scrollToBottom = () => {
+    this.messagesEnd.scrollIntoView({ behavior: "smooth" });
+  }
+
+  componentDidUpdate() {
+    this.scrollToBottom();
+  }
+
+  componentDidMount() {
+    this.scrollToBottom();
+  }
+
   onSubmit() {
     const { onSend, data } = this.props;
     const { message } = this.state;
-
-    onSend(data.id, message)
-    this.setState({ message: "" })
+    if (message !== "") {
+      onSend(data.id, message)
+      this.setState({ message: "" })
+    }
   }
 
   render() {
@@ -37,6 +50,9 @@ class RightPanel extends React.Component {
               <MessageDisplay message={messages[index]} key={key} avatar={image} />
             )
           }
+          <div style={{ float: "left", clear: "both" }}
+            ref={(el) => { this.messagesEnd = el; }}>
+          </div>
         </div>
         <Row align="bottom" type="flex" justify="center">
           <Input

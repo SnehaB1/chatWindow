@@ -51,7 +51,7 @@ export const chatData = [
             },
             {
                 "author": "other",
-                "text": "Yellow"
+                "text": "Nunc vitae nulla vitae tellus iaculis sollicitudin varius sed ipsum."
             }
         ]
     },
@@ -67,7 +67,7 @@ export const chatData = [
             },
             {
                 "author": "other",
-                "text": "Yellow"
+                "text": "Nunc vitae nulla vitae tellus iaculis sollicitudin varius sed ipsum."
             }
         ]
     },
@@ -83,7 +83,7 @@ export const chatData = [
             },
             {
                 "author": "other",
-                "text": "Yellow"
+                "text": "Nunc vitae nulla vitae tellus iaculis sollicitudin varius sed ipsum."
             }
         ]
     },
@@ -99,7 +99,7 @@ export const chatData = [
             },
             {
                 "author": "other",
-                "text": "Yellow"
+                "text": "Nunc vitae nulla vitae tellus iaculis sollicitudin varius sed ipsum."
             }
         ]
     },
@@ -115,7 +115,7 @@ export const chatData = [
             },
             {
                 "author": "other",
-                "text": "Yellow"
+                "text": "Nunc vitae nulla vitae tellus iaculis sollicitudin varius sed ipsum."
             }
         ]
     },
@@ -131,7 +131,7 @@ export const chatData = [
             },
             {
                 "author": "other",
-                "text": "Yellow"
+                "text": "Nunc vitae nulla vitae tellus iaculis sollicitudin varius sed ipsum."
             }
         ]
     },
@@ -147,7 +147,7 @@ export const chatData = [
             },
             {
                 "author": "other",
-                "text": "Yellow"
+                "text": "Nunc vitae nulla vitae tellus iaculis sollicitudin varius sed ipsum."
             }
         ]
     },
@@ -163,7 +163,7 @@ export const chatData = [
             },
             {
                 "author": "other",
-                "text": "Yellow"
+                "text": "Nunc vitae nulla vitae tellus iaculis sollicitudin varius sed ipsum."
             }
         ]
     },
@@ -179,7 +179,7 @@ export const chatData = [
             },
             {
                 "author": "other",
-                "text": "Yellow"
+                "text": "Nunc vitae nulla vitae tellus iaculis sollicitudin varius sed ipsum."
             }
         ]
     },
@@ -195,7 +195,7 @@ export const chatData = [
             },
             {
                 "author": "other",
-                "text": "Yellow"
+                "text": "Nunc vitae nulla vitae tellus iaculis sollicitudin varius sed ipsum."
             }
         ]
     },
@@ -211,7 +211,7 @@ export const chatData = [
             },
             {
                 "author": "other",
-                "text": "Yellow"
+                "text": "Nunc vitae nulla vitae tellus iaculis sollicitudin varius sed ipsum."
             }
         ]
     }
