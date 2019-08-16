@@ -121,7 +121,7 @@
     margin: 20px;
     display: inline-block;
     position: relative;
-    width: 100%;
+    width: auto;
     height: auto;
     border-radius: 8px;
     padding: 12px;
@@ -133,7 +133,7 @@
     margin: 20px;
     display: inline-block;
     position: relative;
-    width: 100%;
+    width: auto;
     height: auto;
     border-radius: 8px;
     padding: 12px;
