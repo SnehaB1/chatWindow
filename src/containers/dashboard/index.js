@@ -14,20 +14,33 @@ class Dashboard extends React.Component {
     }
   }
 
+  formatAMPM(date) {
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var ampm = hours >= 12 ? 'pm' : 'am';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+    return strTime;
+  }
+
   updateState = (id, message) => {
     const { updateStore, activeChat } = this.props;
 
     Object.keys(activeChat).map((index) => {
       if (activeChat[index].id === id) {
         const temp = activeChat[index];
+        temp.time = this.formatAMPM(new Date())
         temp.messages.push({ "author": "me", "text": message });
+
         return updateStore(temp)
       }
-      return false
+      return false;
     })
+    this.setState({ activeChat: activeChat })
   }
 
-  
   componentDidMount() {
     this.updateState();
   }
@@ -71,7 +84,6 @@ class Dashboard extends React.Component {
                 activeChat && Object.keys(activeChat).map((index) =>
                   <div onClick={() => this.setState({ active: activeChat[index].id })} key={activeChat[index].id}>
                     <LeftPanel chat={activeChat[index]} key={activeChat[index].id} active={active} />
-
                   </div>
                 )
 
@@ -83,7 +95,7 @@ class Dashboard extends React.Component {
         <Col span={18}>
           <div>
             <RightPanel data={activeChat[active]} onSend={this.updateState} />
-            
+
           </div>
         </Col>
       </Row>
