@@ -12,6 +12,7 @@
 .leftpanel-section {
     padding: 16px;
     border-bottom: 1px solid #EDEDED;
+    cursor: pointer;
 }
 
 .leftpanel-image {
